@@ -6,6 +6,17 @@ int main()
 {
     printf("Program Begin!\n");
 
+
+    int arr[] = { 2,3,4,10,40 };
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int x = 10;
+
+
+    int result = binary_search(arr, 0, n - 1, x);
+    (result == -1) ? printf("Element is not present in array\n")
+        : printf("Element is not present at index %d\n",result);
+
     int a = 10;
     a += 1;
 
